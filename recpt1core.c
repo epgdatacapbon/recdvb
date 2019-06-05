@@ -391,7 +391,7 @@ close_tuner(thread_data *tdata)
 	struct dtv_properties props;
     int rv = 0;
 
-    if(tdata->table->type == CHTYPE_SATELLITE && tdata->lnb >= 0 && tdata->lnb != SEC_VOLTAGE_OFF) {
+    if(0 && tdata->table->type == CHTYPE_SATELLITE && tdata->lnb >= 0 && tdata->lnb != SEC_VOLTAGE_OFF) {
 		prop[0].cmd = DTV_VOLTAGE;
 		prop[0].u.data = SEC_VOLTAGE_OFF;
 		props.props = prop;
