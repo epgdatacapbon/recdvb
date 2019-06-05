@@ -538,7 +538,7 @@ calc_cn(int fd, int type, boolean use_bell)
 				struct dtv_property prop[1];
 				struct dtv_properties props;
 
-				prop[0].cmd = DTV_STAT_SIGNAL_STRENGTH;
+				prop[0].cmd = DTV_STAT_CNR;
 	//			prop[0].u.data = SEC_VOLTAGE_OFF;
 				props.props = prop;
 				props.num = 1;
@@ -551,7 +551,7 @@ calc_cn(int fd, int type, boolean use_bell)
 					return;
 #ifdef DTV_STAT_SIGNAL_STRENGTH
 				}else{
-				    fprintf(stderr,"\rSNR0: %d", prop[0].u.st.stat[0].uvalue);
+				    fprintf(stderr,"\rSNR0: %.2fdB", prop[0].u.st.stat[0].svalue/1000.);
 					return;
 				}
 #endif
