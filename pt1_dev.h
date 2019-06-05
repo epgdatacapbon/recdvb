@@ -47,14 +47,12 @@ int isdb_t_dev[] = {
 ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   0, CHTYPE_SATELLITE, 0, 0x4010, "151"},  /* 151ch：BS朝日 */
     {   0, CHTYPE_SATELLITE, 1, 0x4011, "161"},  /* 161ch：BS-TBS */
+    {   0, CHTYPE_SATELLITE, 2, 0x4012, "171"},  /* 171ch：BSJapan */
     {   1, CHTYPE_SATELLITE, 0, 0x4030, "191"},  /* 191ch：WOWOW prime */
-    {   1, CHTYPE_SATELLITE, 1, 0x4031, "171"},  /* 171ch：BSジャパン */
+    {   1, CHTYPE_SATELLITE, 1, 0x4031, "103"},  /* 103ch：NHK-BSプレミアム*/
+    {   1, CHTYPE_SATELLITE, 2, 0x4032, "256"},  /* 256ch：ディズニー・チャンネル */
     {   2, CHTYPE_SATELLITE, 0, 0x4450, "192"},  /* 192ch：WOWOWライブ */
     {   2, CHTYPE_SATELLITE, 1, 0x4451, "193"},  /* 193ch：WOWOWシネマ */
-    {   3, CHTYPE_SATELLITE, 0, 0x4470, "201"},  /* 201ch：スター・チャンネル2 */
-    {   3, CHTYPE_SATELLITE, 0, 0x4470, "202"},  /* 202ch：スター・チャンネル3 */
-    {   3, CHTYPE_SATELLITE, 1, 0x4671, "236"},  /* 236ch：BSアニマックス */
-    {   3, CHTYPE_SATELLITE, 2, 0x4672, "256"},  /* 256ch：ディズニー・チャンネル */
     {   4, CHTYPE_SATELLITE, 0, 0x4090, "211"},  /* 211ch：BS11デジタル */
     {   4, CHTYPE_SATELLITE, 1, 0x4091, "200"},  /* 200ch：スター・チャンネル1 */
     {   4, CHTYPE_SATELLITE, 2, 0x4092, "222"},  /* 222ch：TwellV */
@@ -66,17 +64,10 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   5, CHTYPE_SATELLITE, 2, 0x46b2, "531"},  /* 531ch：放送大学ラジオ */
     {   6, CHTYPE_SATELLITE, 0, 0x40d0, "141"},  /* 141ch：BS日テレ */
     {   6, CHTYPE_SATELLITE, 1, 0x40d1, "181"},  /* 181ch：BSフジ */
+    {   6, CHTYPE_SATELLITE, 2, 0x40d2, "236"},  /* 236ch：BSAnimax */
     {   7, CHTYPE_SATELLITE, 0, 0x40f1, "101"},  /* 101ch：NHK-BS1 */
     {   7, CHTYPE_SATELLITE, 0, 0x40f1, "102"},  /* 102ch：NHK-BS1臨時 */
-    {   7, CHTYPE_SATELLITE, 1, 0x40f2, "103"},  /* 103ch：NHK-BSプレミアム*/
-    {   7, CHTYPE_SATELLITE, 1, 0x40f2, "910"},  /* 910ch：ウェザーニュース(WNI)*/
-    {   8, CHTYPE_SATELLITE, 2, 0x4311, "291"},  /* 291ch：NHK総合テレビジョン（東京）*/
-    {   8, CHTYPE_SATELLITE, 2, 0x4311, "292"},  /* 292ch：NHK教育テレビジョン（東京）*/
-    {   8, CHTYPE_SATELLITE, 1, 0x4310, "294"},  /* 294ch：日本テレビ */
-    {   8, CHTYPE_SATELLITE, 1, 0x4310, "295"},  /* 295ch：テレビ朝日 */
-    {   8, CHTYPE_SATELLITE, 1, 0x4310, "296"},  /* 296ch：TBSテレビ */
-    {   8, CHTYPE_SATELLITE, 1, 0x4310, "297"},  /* 297ch：テレビ東京 */
-    {   8, CHTYPE_SATELLITE, 2, 0x4311, "298"},  /* 298ch：フジテレビ */
+    {   7, CHTYPE_SATELLITE, 1, 0x40f2, "710"},  /* 910ch：ウェザーニュース(WNI)*/
     {   9, CHTYPE_SATELLITE, 0, 0x4730, "234"},  /* 234ch：グリーンチャンネル */
     {   9, CHTYPE_SATELLITE, 1, 0x4731, "242"},  /* 242ch：J SPORTS 1 */
     {   9, CHTYPE_SATELLITE, 2, 0x4732, "243"},  /* 243ch：J SPORTS 2 */
@@ -85,7 +76,7 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {  10, CHTYPE_SATELLITE, 2, 0x4752, "245"},  /* 245ch：J SPORTS 4 */
     {  11, CHTYPE_SATELLITE, 0, 0x4770, "251"},  /* 251ch：BS釣りビジョン */
     {  11, CHTYPE_SATELLITE, 1, 0x4771, "255"},  /* 255ch：日本映画専門チャンネル */
-    {  11, CHTYPE_SATELLITE, 2, 0x4772, "258"},  /* 258ch：D-Life */
+     {  11, CHTYPE_SATELLITE, 2, 0x4772, "258"},  /* 258ch：D-Life */
     {  12, CHTYPE_SATELLITE, 0, 0x6020, "CS2"},  /* ND2：
                                           * 237ch：スター・チャンネル プラス
                                           * 239ch：日本映画専門チャンネルHD
