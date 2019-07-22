@@ -69,6 +69,19 @@ void read_line(int socket, char *p){
 	*p = '\0';
 }
 
+void *
+showcn_func(void *t)
+{
+    thread_data *tdata = (thread_data *)t;
+
+    while(1) {
+        sleep(10);
+	    calc_cn(tdata->fefd, tdata->table->type, FALSE);
+        if(f_exit)
+            return NULL;
+    }
+}
+
 
 /* will be ipc message receive thread */
 void *
@@ -636,6 +649,7 @@ main(int argc, char **argv)
     pthread_t signal_thread;
     pthread_t reader_thread;
     pthread_t ipc_thread;
+    pthread_t showcn_thread;
     QUEUE_T *p_queue = create_queue(MAX_QUEUE);
     BUFSZ   *bufptr;
     decoder *decoder = NULL;
@@ -1020,6 +1034,8 @@ while(1){	// http-server add-
     pthread_create(&ipc_thread, NULL, mq_recv, &tdata);
     fprintf(stderr, "\nRecording...\n");
 
+    pthread_create(&showcn_thread, NULL, showcn_func, &tdata);
+
     time(&tdata.start_time);
 
     /* read from tuner */
@@ -1082,6 +1098,8 @@ while(1){	// http-server add-
     pthread_join(reader_thread, NULL);
     pthread_join(signal_thread, NULL);
     pthread_join(ipc_thread, NULL);
+    // join?
+    // pthread_kill(showcn_thread, SIGUSR1);
 
     /* close tuner */
     if(close_tuner(&tdata) != 0)
