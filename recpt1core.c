@@ -32,6 +32,29 @@ ISDB_T_FREQ_CONV_TABLE isdb_t_conv_set = {
 #define SIANO_MBL	0x0008		// PX-S1UD S880
 #define DIBCOM8000	0x0010		// S870
 #define FRIIO_WT	0x0020		// Friio白
+#define MAX_TIME		10	/* 1.0 seconds */
+
+#define xioctl(fh, request, arg...) ({					\
+	int __rc;							\
+	struct timespec __start, __end;					\
+									\
+	clock_gettime(CLOCK_MONOTONIC, &__start);			\
+	do {								\
+		__rc = ioctl(fh, request, ##arg);			\
+		if (__rc != -1)						\
+			break;						\
+		if ((errno != EINTR) && (errno != EAGAIN))		\
+			break;						\
+		clock_gettime(CLOCK_MONOTONIC, &__end);			\
+		if (__end.tv_sec * 10 + __end.tv_nsec / 100000000 >	\
+		    __start.tv_sec * 10 + __start.tv_nsec / 100000000 +	\
+		    MAX_TIME)						\
+			break;						\
+	} while (1);							\
+									\
+	__rc;								\
+})
+
 int tuner_type = OTHER_TUNER;
 struct {
 	char *name;
@@ -543,7 +566,7 @@ calc_cn(int fd, int type, boolean use_bell)
 				props.props = prop;
 				props.num = 1;
 
-				if (ioctl(fd, FE_GET_PROPERTY, &props) < 0){
+				if (xioctl(fd, FE_GET_PROPERTY, &props) < 0){
 					fprintf(stderr, "ERROR: calc_cn() ioctl(FE_GET_PROPERTY) errno=%d(%s)\n", errno, strerror(errno));
 #endif
 					fprintf(stderr, "ERROR: calc_cn() ioctl(FE_READ_SIGNAL_STRENGTH) errno=%d(%s)\n", ss_errno, strerror(ss_errno));
@@ -551,7 +574,7 @@ calc_cn(int fd, int type, boolean use_bell)
 					return;
 #ifdef DTV_STAT_SIGNAL_STRENGTH
 				}else{
-				    fprintf(stderr,"\rSNR0: %.2fdB", prop[0].u.st.stat[0].svalue/1000.);
+				    fprintf(stderr,"SNR0: %.2fdB\n", prop[0].u.st.stat[0].svalue/1000.);
 					return;
 				}
 #endif
