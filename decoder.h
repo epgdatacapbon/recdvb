@@ -8,11 +8,13 @@
 #ifdef HAVE_LIBARIB25
 
 #include <arib25/arib_std_b25.h>
+#include <arib25/arib_std_b25_error_code.h>
 #include <arib25/b_cas_card.h>
 
 typedef struct decoder {
     ARIB_STD_B25 *b25;
     B_CAS_CARD *bcas;
+    uint8_t *_data;
 } decoder;
 
 typedef struct decoder_options {
