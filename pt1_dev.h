@@ -48,8 +48,8 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   0, CHTYPE_SATELLITE, 0, 0x4010, "151"},  /* 151ch：BS朝日 */
     {   0, CHTYPE_SATELLITE, 1, 0x4011, "161"},  /* 161ch：BS-TBS */
     {   0, CHTYPE_SATELLITE, 2, 0x4012, "171"},  /* 171ch：BSテレ東 */
-    {   1, CHTYPE_SATELLITE, 0, 0x4030, "191"},  /* 191ch：WOWOW prime */
-    {   1, CHTYPE_SATELLITE, 1, 0x4031, "103"},  /* 103ch：NHK-BSプレミアム*/
+    {   1, CHTYPE_SATELLITE, 0, 0x4030, "191"},  /* 191ch：WOWOWプライム */
+    {   1, CHTYPE_SATELLITE, 1, 0x4031, "103"},  /* 103ch：NHK BSプレミアム*/
     {   1, CHTYPE_SATELLITE, 2, 0x4632, "256"},  /* 256ch：ディズニーチャンネル */
     {   2, CHTYPE_SATELLITE, 0, 0x4450, "192"},  /* 192ch：WOWOWライブ */
     {   2, CHTYPE_SATELLITE, 1, 0x4451, "193"},  /* 193ch：WOWOWシネマ */
@@ -63,15 +63,15 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   6, CHTYPE_SATELLITE, 0, 0x40d0, "141"},  /* 141ch：BS日テレ */
     {   6, CHTYPE_SATELLITE, 1, 0x40d1, "181"},  /* 181ch：BSフジ */
     {   6, CHTYPE_SATELLITE, 2, 0x46d2, "236"},  /* 236ch：ANIMAX */
-    {   7, CHTYPE_SATELLITE, 0, 0x40f1, "101"},  /* 101ch：NHK-BS1 */
+    {   7, CHTYPE_SATELLITE, 0, 0x40f1, "101"},  /* 101ch：NHK BS1 */
     {   7, CHTYPE_SATELLITE, 1, 0x40f2, "201"},  /* 201ch：スターチャンネル2 */
     {   7, CHTYPE_SATELLITE, 1, 0x40f2, "202"},  /* 202ch：スターチャンネル3 */
-    {   9, CHTYPE_SATELLITE, 0, 0x4730, "234"},  /* 234ch：グリーンチャンネル */
+    {   9, CHTYPE_SATELLITE, 0, 0x4730, "245"},  /* 245ch：J SPORTS 4 */
     {   9, CHTYPE_SATELLITE, 1, 0x4731, "242"},  /* 242ch：J SPORTS 1 */
     {   9, CHTYPE_SATELLITE, 2, 0x4732, "243"},  /* 243ch：J SPORTS 2 */
+    {   9, CHTYPE_SATELLITE, 3, 0x4751, "244"},  /* 244ch：J SPORTS 3 */
     {  10, CHTYPE_SATELLITE, 0, 0x4750, "252"},  /* 252ch：WOWOWプラス */
-    {  10, CHTYPE_SATELLITE, 1, 0x4751, "244"},  /* 244ch：J SPORTS 3 */
-    {  10, CHTYPE_SATELLITE, 2, 0x4752, "245"},  /* 245ch：J SPORTS 4 */
+    {  10, CHTYPE_SATELLITE, 1, 0x4752, "234"},  /* 234ch：グリーンチャンネル */
     {  11, CHTYPE_SATELLITE, 0, 0x4770, "251"},  /* 251ch：BS釣りビジョン */
     {  11, CHTYPE_SATELLITE, 1, 0x4771, "255"},  /* 255ch：日本映画専門チャンネル */
     {  12, CHTYPE_SATELLITE, 0, 0x6020, "CS2"},  /* ND2 */
