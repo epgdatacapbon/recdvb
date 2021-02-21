@@ -59,10 +59,10 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   5, CHTYPE_SATELLITE, 0, 0x46b1, "241"},  /* 241ch：BSスカパー！ */
     {   5, CHTYPE_SATELLITE, 1, 0x46b2, "231"},  /* 231ch：BSキャンパスex */
     {   5, CHTYPE_SATELLITE, 1, 0x46b2, "232"},  /* 232ch：BSキャンパスon */
-    {   5, CHTYPE_SATELLITE, 1, 0x46b2, "531"},  /* 531ch：放送大学ラジオ */
+    {   5, CHTYPE_SATELLITE, 2, 0x46b2, "531"},  /* 531ch：放送大学ラジオ */
     {   6, CHTYPE_SATELLITE, 0, 0x40d0, "141"},  /* 141ch：BS日テレ */
     {   6, CHTYPE_SATELLITE, 1, 0x40d1, "181"},  /* 181ch：BSフジ */
-    {   6, CHTYPE_SATELLITE, 2, 0x46d2, "236"},  /* 236ch：ANIMAX */
+    {   6, CHTYPE_SATELLITE, 2, 0x46d2, "236"},  /* 236ch：BSアニマックス */
     {   7, CHTYPE_SATELLITE, 0, 0x40f1, "101"},  /* 101ch：NHK BS1 */
     {   7, CHTYPE_SATELLITE, 1, 0x40f2, "201"},  /* 201ch：スターチャンネル2 */
     {   7, CHTYPE_SATELLITE, 1, 0x40f2, "202"},  /* 202ch：スターチャンネル3 */
@@ -71,7 +71,7 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   9, CHTYPE_SATELLITE, 2, 0x4732, "243"},  /* 243ch：J SPORTS 2 */
     {   9, CHTYPE_SATELLITE, 3, 0x4751, "244"},  /* 244ch：J SPORTS 3 */
     {  10, CHTYPE_SATELLITE, 0, 0x4750, "252"},  /* 252ch：WOWOWプラス */
-    {  10, CHTYPE_SATELLITE, 1, 0x4752, "234"},  /* 234ch：グリーンチャンネル */
+    {  10, CHTYPE_SATELLITE, 2, 0x4752, "234"},  /* 234ch：グリーンチャンネル */
     {  11, CHTYPE_SATELLITE, 0, 0x4770, "251"},  /* 251ch：BS釣りビジョン */
     {  11, CHTYPE_SATELLITE, 1, 0x4771, "255"},  /* 255ch：日本映画専門チャンネル */
     {  12, CHTYPE_SATELLITE, 0, 0x6020, "CS2"},  /* ND2 */
