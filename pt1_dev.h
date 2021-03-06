@@ -56,20 +56,20 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   4, CHTYPE_SATELLITE, 0, 0x4090, "211"},  /* 211ch：BS11 */
     {   4, CHTYPE_SATELLITE, 1, 0x4091, "200"},  /* 200ch：スターチャンネル1 */
     {   4, CHTYPE_SATELLITE, 2, 0x4092, "222"},  /* 222ch：TwellV */
-    {   5, CHTYPE_SATELLITE, 0, 0x46b1, "241"},  /* 241ch：BSスカパー！ */
-    {   5, CHTYPE_SATELLITE, 1, 0x46b2, "231"},  /* 231ch：BSキャンパスex */
-    {   5, CHTYPE_SATELLITE, 1, 0x46b2, "232"},  /* 232ch：BSキャンパスon */
+    {   5, CHTYPE_SATELLITE, 1, 0x46b1, "241"},  /* 241ch：BSスカパー！ */
+    {   5, CHTYPE_SATELLITE, 2, 0x46b2, "231"},  /* 231ch：BSキャンパスex */
+    {   5, CHTYPE_SATELLITE, 2, 0x46b2, "232"},  /* 232ch：BSキャンパスon */
     {   5, CHTYPE_SATELLITE, 2, 0x46b2, "531"},  /* 531ch：放送大学ラジオ */
     {   6, CHTYPE_SATELLITE, 0, 0x40d0, "141"},  /* 141ch：BS日テレ */
     {   6, CHTYPE_SATELLITE, 1, 0x40d1, "181"},  /* 181ch：BSフジ */
     {   6, CHTYPE_SATELLITE, 2, 0x46d2, "236"},  /* 236ch：BSアニマックス */
-    {   7, CHTYPE_SATELLITE, 0, 0x40f1, "101"},  /* 101ch：NHK BS1 */
-    {   7, CHTYPE_SATELLITE, 1, 0x40f2, "201"},  /* 201ch：スターチャンネル2 */
-    {   7, CHTYPE_SATELLITE, 1, 0x40f2, "202"},  /* 202ch：スターチャンネル3 */
+    {   7, CHTYPE_SATELLITE, 1, 0x40f1, "101"},  /* 101ch：NHK BS1 */
+    {   7, CHTYPE_SATELLITE, 2, 0x40f2, "201"},  /* 201ch：スターチャンネル2 */
+    {   7, CHTYPE_SATELLITE, 2, 0x40f2, "202"},  /* 202ch：スターチャンネル3 */
     {   9, CHTYPE_SATELLITE, 0, 0x4730, "245"},  /* 245ch：J SPORTS 4 */
     {   9, CHTYPE_SATELLITE, 1, 0x4731, "242"},  /* 242ch：J SPORTS 1 */
     {   9, CHTYPE_SATELLITE, 2, 0x4732, "243"},  /* 243ch：J SPORTS 2 */
-    {   9, CHTYPE_SATELLITE, 3, 0x4751, "244"},  /* 244ch：J SPORTS 3 */
+    {   9, CHTYPE_SATELLITE, 3, 0x4733, "244"},  /* 244ch：J SPORTS 3 */
     {  10, CHTYPE_SATELLITE, 0, 0x4750, "252"},  /* 252ch：WOWOWプラス */
     {  10, CHTYPE_SATELLITE, 2, 0x4752, "234"},  /* 234ch：グリーンチャンネル */
     {  11, CHTYPE_SATELLITE, 0, 0x4770, "251"},  /* 251ch：BS釣りビジョン */
