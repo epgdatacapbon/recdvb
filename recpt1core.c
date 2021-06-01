@@ -650,7 +650,7 @@ show_channels(void)
 	fprintf(stderr, "201ch: Star Channel2\n");
 	fprintf(stderr, "202ch: Star Channel3\n");
 	fprintf(stderr, "211ch: BS11\n");
-	fprintf(stderr, "222ch: TwellV\n");
+	fprintf(stderr, "222ch: BS12\n");
 	fprintf(stderr, "231ch: BS Campus ex\n");
 	fprintf(stderr, "232ch: BS Campus on\n");
 	fprintf(stderr, "531ch: Hoso Daigaku Radio\n");

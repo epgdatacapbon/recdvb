@@ -50,16 +50,16 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   0, CHTYPE_SATELLITE, 2, 0x4012, "171"},  /* 171ch：BSテレ東 */
     {   1, CHTYPE_SATELLITE, 0, 0x4030, "191"},  /* 191ch：WOWOWプライム */
     {   1, CHTYPE_SATELLITE, 1, 0x4031, "103"},  /* 103ch：NHK BSプレミアム*/
-    {   1, CHTYPE_SATELLITE, 2, 0x4632, "256"},  /* 256ch：ディズニーチャンネル */
     {   2, CHTYPE_SATELLITE, 0, 0x4450, "192"},  /* 192ch：WOWOWライブ */
     {   2, CHTYPE_SATELLITE, 1, 0x4451, "193"},  /* 193ch：WOWOWシネマ */
     {   4, CHTYPE_SATELLITE, 0, 0x4090, "211"},  /* 211ch：BS11 */
     {   4, CHTYPE_SATELLITE, 1, 0x4091, "200"},  /* 200ch：スターチャンネル1 */
-    {   4, CHTYPE_SATELLITE, 2, 0x4092, "222"},  /* 222ch：TwellV */
+    {   4, CHTYPE_SATELLITE, 2, 0x4092, "222"},  /* 222ch：BS12 */
     {   5, CHTYPE_SATELLITE, 1, 0x46b1, "241"},  /* 241ch：BSスカパー！ */
     {   5, CHTYPE_SATELLITE, 2, 0x46b2, "231"},  /* 231ch：BSキャンパスex */
     {   5, CHTYPE_SATELLITE, 2, 0x46b2, "232"},  /* 232ch：BSキャンパスon */
     {   5, CHTYPE_SATELLITE, 2, 0x46b2, "531"},  /* 531ch：放送大学ラジオ */
+    {   5, CHTYPE_SATELLITE, 3, 0x46b3, "251"},  /* 251ch：BS釣りビジョン */
     {   6, CHTYPE_SATELLITE, 0, 0x40d0, "141"},  /* 141ch：BS日テレ */
     {   6, CHTYPE_SATELLITE, 1, 0x40d1, "181"},  /* 181ch：BSフジ */
     {   6, CHTYPE_SATELLITE, 2, 0x46d2, "236"},  /* 236ch：BSアニマックス */
@@ -71,9 +71,9 @@ ISDB_T_FREQ_CONV_TABLE    isdb_t_conv_table[] = {
     {   9, CHTYPE_SATELLITE, 2, 0x4732, "243"},  /* 243ch：J SPORTS 2 */
     {   9, CHTYPE_SATELLITE, 3, 0x4733, "244"},  /* 244ch：J SPORTS 3 */
     {  10, CHTYPE_SATELLITE, 0, 0x4750, "252"},  /* 252ch：WOWOWプラス */
+    {  10, CHTYPE_SATELLITE, 1, 0x4751, "255"},  /* 255ch：日本映画専門チャンネル */
     {  10, CHTYPE_SATELLITE, 2, 0x4752, "234"},  /* 234ch：グリーンチャンネル */
-    {  11, CHTYPE_SATELLITE, 0, 0x4770, "251"},  /* 251ch：BS釣りビジョン */
-    {  11, CHTYPE_SATELLITE, 1, 0x4771, "255"},  /* 255ch：日本映画専門チャンネル */
+    {  11, CHTYPE_SATELLITE, 0, 0x4770, "256"},  /* 256ch：ディズニーチャンネル */
     {  12, CHTYPE_SATELLITE, 0, 0x6020, "CS2"},  /* ND2 */
     {  13, CHTYPE_SATELLITE, 0, 0x7040, "CS4"},  /* ND4 */
     {  14, CHTYPE_SATELLITE, 0, 0x7060, "CS6"},  /* ND6 */
